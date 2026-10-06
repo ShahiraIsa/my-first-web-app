@@ -3,82 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Nor Shahira Binti Mohd Isa | Economics Graduate Portfolio</title>
+  <meta name="description" content="Economics graduate with experience in operations, incident management, marketing and logistics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Nor Shahira</h1>
-      <p>Web Developer & Creative Thinker</p>
-    </div>
-  </header>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <nav class="navbar">
-    <div class="container">
-      <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
+  <nav class="navbar" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Nor Shahira</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#involvement">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container">
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="role">Economics Graduate · Operations &amp; Data Reporting</p>
+        <h1>Nor Shahira Binti Mohd Isa</h1>
+        <p class="lead">
+          I turn operational data into clear reports and dependable processes. Most recently I managed
+          incidents at Permodalan Nasional Berhad while keeping a 100% record against a 1-hour response SLA.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="#experience">View experience</a>
+        </div>
+      </div>
+      <aside class="glance" aria-label="Highlights">
+        <dl>
+          <div><dt>Incident response SLA</dt><dd>100% met</dd></div>
+          <div><dt>SOP documents written</dt><dd>5</dd></div>
+          <div><dt>Event sales in 3 days</dt><dd>RM2,000</dd></div>
+          <div><dt>Degree CGPA (2nd Upper)</dt><dd>3.62</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </header>
+
+  <main id="main" class="container">
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        Welcome to my portfolio! I'm a passionate web developer with a love for creating
-        beautiful, functional websites. I enjoy learning new technologies and solving
-        complex problems through creative coding solutions. When I'm not coding, you can
-        find me exploring new design trends and contributing to open-source projects.
-      </p>
+      <h2>About me</h2>
+      <div class="prose">
+        <p>
+          I am an Economics graduate from Universiti Utara Malaysia with hands-on experience in operations,
+          marketing, logistics and customer service. I am skilled in data analysis, reporting, process
+          improvement and administrative support.
+        </p>
+        <p>
+          I am looking for a role where I can apply analytical and organisational skills while contributing
+          to business growth. I am based in Bandar Puncak Alam, Selangor.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Work experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-head">
+            <h3>Graduate Executive Trainee (GET MyStep)</h3>
+            <p class="when">Nov 2025 – Jun 2026</p>
+          </div>
+          <p class="org">Permodalan Nasional Berhad, Kuala Lumpur</p>
+          <ul>
+            <li>Handled incident management in JIRA, from issue assessment and categorisation to coordination with configuration teams, with 100% compliance with the 1-hour response SLA.</li>
+            <li>Prepared daily incident reports with Power BI and Microsoft Excel to monitor operational performance.</li>
+            <li>Tracked resolution progress, evaluated SLA achievement and coordinated follow-ups on outstanding cases.</li>
+            <li>Assisted the ARTB SWIFT Handshake project by preparing presentation materials for management review and approval.</li>
+            <li>Created five SOP documents to improve workflow consistency, process clarity and knowledge sharing.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Sales &amp; Marketing / Logistics Intern</h3>
+            <p class="when">Mar 2025 – Jul 2025</p>
+          </div>
+          <p class="org">Stearex International Sdn. Bhd., Puncak Alam</p>
+          <ul>
+            <li>Managed weekly promotional content across Instagram, TikTok and Facebook to support customer engagement.</li>
+            <li>Supported Sabah International Food Expo 2025, contributing RM2,000 in sales within three days.</li>
+            <li>Verified orders by matching delivery documents to purchase requirements for shipments of up to 2,000 units.</li>
+            <li>Coordinated courier arrangements and monitored shipments to ensure timely delivery.</li>
+            <li>Maintained inventory records and monthly stock reconciliation in Excel for 500–10,000 units.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Sales Assistant / Cat Groomer (Part-time)</h3>
+            <p class="when">Sep 2022 – Nov 2022</p>
+          </div>
+          <p class="org">Cat In Stylez Pet Shop, Puncak Alam</p>
+          <ul>
+            <li>Advised customers on product choices and pet care enquiries.</li>
+            <li>Performed basic cat grooming while ensuring animal comfort and safety.</li>
+            <li>Processed sales and maintained product displays and inventory.</li>
+          </ul>
+        </li>
+      </ol>
     </section>
 
     <section id="skills" class="section">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card">
-          <h3>HTML</h3>
-          <p>Semantic markup and accessibility</p>
+        <div class="skill-group">
+          <h3>Software</h3>
+          <ul class="levels">
+            <li><span>Microsoft Office Suite</span><em>Advanced</em></li>
+            <li><span>Google Workspace</span><em>Advanced</em></li>
+            <li><span>Outlook</span><em>Advanced</em></li>
+            <li><span>Power BI</span><em>Intermediate</em></li>
+            <li><span>SPSS</span><em>Intermediate</em></li>
+            <li><span>JIRA</span><em>Work experience</em></li>
+          </ul>
         </div>
-        <div class="skill-card">
-          <h3>CSS</h3>
-          <p>Responsive design and animations</p>
+        <div class="skill-group">
+          <h3>Professional strengths</h3>
+          <ul class="plain">
+            <li>Incident management and SLA tracking</li>
+            <li>Data analysis and reporting</li>
+            <li>Process improvement and SOP writing</li>
+            <li>Inventory and logistics coordination</li>
+            <li>Social media content and customer service</li>
+          </ul>
         </div>
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <p>Interactivity and DOM manipulation</p>
-        </div>
-        <div class="skill-card">
-          <h3>Web Design</h3>
-          <p>UI/UX principles and best practices</p>
-        </div>
-        <div class="skill-card">
-          <h3>Git & GitHub</h3>
-          <p>Version control and collaboration</p>
-        </div>
-        <div class="skill-card">
-          <h3>Problem Solving</h3>
-          <p>Debugging and optimization</p>
+        <div class="skill-group">
+          <h3>Working style</h3>
+          <ul class="plain">
+            <li>Clear written and verbal communication</li>
+            <li>Works well in a team or independently</li>
+            <li>Strong time management and organisation</li>
+            <li>Adapts quickly to new environments</li>
+            <li>Self-motivated and eager to learn</li>
+          </ul>
+          <h3 class="sub">Languages</h3>
+          <ul class="levels">
+            <li><span>Bahasa Melayu</span><em>Native</em></li>
+            <li><span>English</span><em>Intermediate</em></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>I'd love to hear from you! Feel free to reach out through any of these channels:</p>
-      <div class="contact-links">
-        <a href="mailto:hello@example.com" class="contact-button">Email Me</a>
-        <a href="https://github.com" class="contact-button" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" class="contact-button" target="_blank">LinkedIn</a>
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="edu">
+        <article>
+          <div class="job-head">
+            <h3>Bachelor of Science Economics (Hons.), Second Class Upper</h3>
+            <p class="when">Oct 2021 – Sep 2025</p>
+          </div>
+          <p class="org">Universiti Utara Malaysia, Kedah</p>
+          <ul>
+            <li>CGPA 3.62. Dean's List in 5 of 8 semesters.</li>
+            <li>Final year thesis: Foreign Direct Investment in Malaysia, 1990 to 2022.</li>
+            <li>JPA (Jabatan Perkhidmatan Awam) scholarship recipient.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="job-head">
+            <h3>Malaysia Higher School Certificate (STPM)</h3>
+            <p class="when">May 2019 – Mar 2021</p>
+          </div>
+          <p class="org">Kolej Tingkatan Enam Sultan Abdul Aziz, Kuala Selangor</p>
+          <ul>
+            <li>CGPA 3.58. Dean's List in Semester 1 and Semester 2.</li>
+          </ul>
+        </article>
       </div>
+    </section>
+
+    <section id="involvement" class="section">
+      <h2>Achievements &amp; involvement</h2>
+      <div class="two-col">
+        <div>
+          <h3>Leadership</h3>
+          <article class="mini">
+            <h4>Deputy Exco, Training and Education</h4>
+            <p class="org">UUM Entrepreneur Corporate Club · Sep 2021 – Aug 2022</p>
+            <p>Supported online programmes including time management and emcee workshops, and helped prepare reports, almanacs and post-event evaluations.</p>
+          </article>
+          <article class="mini">
+            <h4>President, Girl Guides Association Uniformed Club</h4>
+            <p class="org">Persatuan Pandu Puteri · Jun 2019 – Apr 2021</p>
+            <p>Led club activities and coordinated food stall operations for over 5,000 visitors at Hari Keusahawanan. Took part in leadership camps and national Girl Guides Malaysia programmes.</p>
+          </article>
+        </div>
+        <div>
+          <h3>Awards</h3>
+          <ul class="awards">
+            <li><strong>Best Uniform Club</strong> Pandu Puteri Malaysia, March 2021</li>
+            <li><strong>Charismatic Leadership</strong> Award, March 2021</li>
+            <li><strong>3rd place, First Aid Competition</strong> State level, February 2020</li>
+            <li><strong>1st place, Dart Competition</strong> School level, October 2019</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p>I am open to opportunities in operations, reporting and business support. References are available on request.</p>
+      <div class="contact-links">
+        <a href="mailto:norshahiraisa61@gmail.com" class="btn primary">norshahiraisa61@gmail.com</a>
+        <a href="tel:+60173262313" class="btn">+60 17-326 2313</a>
+      </div>
+      <p class="loc">Bandar Puncak Alam, Selangor, Malaysia</p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Van Gogh</p>
+      <p>&copy; 2026 Nor Shahira Binti Mohd Isa</p>
     </div>
   </footer>
 
